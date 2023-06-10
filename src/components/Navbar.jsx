@@ -80,7 +80,7 @@ const Navbar = () => {
             fontWeight='bold'
             fontSize='18px'
             _active={{ color: 'blue' }}
-            _hover={{ borderBottom: 'solid 2px #7928ca', bgClip: 'text', bgGradient: 'linear(to-l, #7928ca, #ff0080)' }}
+            _hover={{ borderBottom: 'solid 2px #469597', bgClip: 'text', bgGradient: 'linear(to-l, #7928ca, #ff0080)' }}
             h='full'
             display='flex'
             alignItems='center'
