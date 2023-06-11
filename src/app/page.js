@@ -1,17 +1,19 @@
 'use client'
 
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import { Container, VStack, Text, Divider } from '@chakra-ui/react';
+import { Main } from "next/document";
 
 export default function Home() {
   return (
-    <Container maxW='100vw' h='100vh' m='0' p='0' centerContent >
+    <main >
       <Navbar />
       <Divider border-bottom='2px' border-color='#469597' />
-      <VStack maxW={{ lg: '80vw' }} bg='green.300'>
-        <Container w='full'>Main body sfasdfsfgdgdgdfg</Container>
-        <Text w='100%'>Main body</Text>
+      <VStack width={{ base: '100%', md: '80%' }} mx='auto' my='2'>
+        <Hero />
+        
       </VStack>
-    </Container>
+    </main>
   )
 }
