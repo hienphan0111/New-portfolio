@@ -2,9 +2,11 @@
 
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+import Navbar from '@/components/Navbar';
+import CareerObjectives from '@/components/CareerObjectives';
 import { Container, VStack, Text, Divider } from '@chakra-ui/react';
 import { Main } from "next/document";
+import MySkills from "@/components/MySkills";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <VStack mx='auto' my='2'>
         <Hero />
         <About />
+        <CareerObjectives />
+        <MySkills />
       </VStack>
     </main>
   )
