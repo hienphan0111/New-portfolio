@@ -13,7 +13,18 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link';
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+import { IconContext } from 'react-icons';
+
+const styles = {
+  iconHover: {
+    '&:hover': {
+      color: 'red',
+    },
+    border: '1px solid green',
+  },
+};
 
 const Hero = () => {
   return (
@@ -77,18 +88,83 @@ const Hero = () => {
           src='https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
           alt='profile'
         />
-        <FaFacebook
-          style={{
-            color: 'blue',
-            fontSize: '40px',
-            position: 'absolute',
-            left: '50%',
-            bottom: '50px',
-            __hover: {
-              color: 'red',
-            }
+        <Box
+          className={styles.iconHover}
+          position= 'absolute'
+          left= '50%'
+          bottom= '50px'
+          color='blue'
+        >
+          <FaFacebook
+            style={{
+              fontSize: '40px',
+            }}
+          />
+        </Box>
+        <Box
+          _hover={{
+            color: 'red',
+            border: '1px solid black',
           }}
-        />
+          position= 'absolute'
+          left= '40%'
+          bottom= '70px'
+          color='blue'
+        >
+          <FaLinkedin
+            style={{
+              fontSize: '40px',
+            }}
+          />
+        </Box>
+        <Box
+          _hover={{
+            color: 'red',
+            border: '1px solid black',
+          }}
+          position= 'absolute'
+          left= '60%'
+          bottom= '70px'
+          color='blue'
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: '40px',
+            }}
+          />
+        </Box>
+        <Box
+          _hover={{
+            color: 'red',
+            border: '1px solid black',
+          }}
+          position= 'absolute'
+          left= '70%'
+          bottom= '80px'
+          color='blue'
+        >
+          <AiOutlineMail
+            style={{
+              fontSize: '40px',
+            }}
+          />
+        </Box>
+        <Box
+          _hover={{
+            color: 'red',
+            border: '1px solid black',
+          }}
+          position= 'absolute'
+          left= '80%'
+          bottom= '100px'
+          color='blue'
+        >
+          <FaGithub
+            style={{
+              fontSize: '40px',
+            }}
+          />
+        </Box>
       </Box>
     </Flex>
   );
