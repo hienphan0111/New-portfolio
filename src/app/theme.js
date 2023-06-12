@@ -15,6 +15,15 @@ const theme = extendTheme({
     useSystemColorMode: false,
   },
   fonts,
+  colors: {
+    primary: {
+      100: '#469597',
+      200: '#5BA199',
+      300: '#BBC6C8',
+      400: '#E5E3E4',
+      500: '#DDBEAA'
+    }
+  }
 });
 
 export default theme;

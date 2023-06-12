@@ -65,7 +65,7 @@ const Navbar = () => {
       h='20'
       px={{ base: '1rem', md: '10rem' }}
     >
-      <Heading as='h3'>Kevin Phan</Heading>
+      <Heading>Kevin Phan</Heading>
       <HStack
         spacing='20px'
         alignItems='center'
