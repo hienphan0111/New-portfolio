@@ -21,7 +21,8 @@ const theme = extendTheme({
       200: '#5BA199',
       300: '#BBC6C8',
       400: '#E5E3E4',
-      500: '#DDBEAA'
+      500: '#DDBEAA',
+      600: '#d4f2ef4f',
     }
   }
 });

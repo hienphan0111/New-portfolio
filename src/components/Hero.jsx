@@ -28,7 +28,7 @@ const styles = {
 
 const Hero = () => {
   return (
-    <Flex gap='2'>
+    <Flex direction={{ base: 'column-reverse', md: 'row' }} gap='2' w={{base: '95%', md: '80%'}}>
       <VStack spacing='25px' align='stretch' justifyContent='center' pr='40px'>
         <Box>
           <Highlight

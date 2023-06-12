@@ -75,7 +75,6 @@ const Navbar = () => {
         {links.map((link) => (
           <Link
             key={link.id}
-            as={NextLink}
             href={link.url}
             fontWeight='bold'
             fontSize='18px'
