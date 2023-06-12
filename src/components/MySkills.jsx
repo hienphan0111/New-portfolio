@@ -10,7 +10,7 @@ const MySkills = () => {
       bg='primary.600'
     >
       <Box w='full'>
-        <Heading as='h3' mb='3'>
+        <Heading as='h3' mb='3' fontSize="24px">
           My Skill
         </Heading>
         <Text>
@@ -29,7 +29,7 @@ const MySkills = () => {
       >
         {
           skills.map((skill) => (
-            <Flex minW='30%' position='relative' justifyContent='flex-end' mt="6">
+            <Flex key={skill.id} minW='30%' position='relative' justifyContent='flex-end' mt="6">
               <Box
                 w='64px'
                 h='64px'
