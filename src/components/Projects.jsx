@@ -6,7 +6,7 @@ import { projects } from '@/db/projects';
 
 const Projects = () => {
   return (
-    <Flex justifyContent="center" direction="column" alignItems="center" gap="3">
+    <Flex justifyContent="center" direction="column" alignItems="center" gap="3" mb="5">
       <Box w='80%'>
         <Heading as='h3' mb='3' fontSize="24px">
           My Projects
@@ -18,7 +18,7 @@ const Projects = () => {
       <Flex w={{ base: '95%', md: "80%"}} justifyContent="space-between" flexWrap="wrap" gap="4">
         {
           projects.map((project) => (
-            <ProjectCard id={project.id} project={project} />
+            <ProjectCard key={project.id} project={project} />
           ))
         }
       </Flex>

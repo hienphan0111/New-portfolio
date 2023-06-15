@@ -7,7 +7,7 @@ import {
   Button,
   Box,
   Highlight,
-  Image,
+  Img,
   HStack,
   Spacer,
   Link,
@@ -16,6 +16,9 @@ import { Link as NextLink } from 'next/link';
 import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import Image from 'next/image';
+import heroImg from '@/assets/Hero.png'
+import Socials from './Socials';
 
 const styles = {
   iconHover: {
@@ -81,90 +84,11 @@ const Hero = () => {
             Download CV
           </Button>
         </HStack>
+        <Socials />
       </VStack>
       <Spacer />
       <Box position='relative'>
-        <Image
-          src='https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-          alt='profile'
-        />
-        <Box
-          className={styles.iconHover}
-          position= 'absolute'
-          left= '50%'
-          bottom= '50px'
-          color='blue'
-        >
-          <FaFacebook
-            style={{
-              fontSize: '40px',
-            }}
-          />
-        </Box>
-        <Box
-          _hover={{
-            color: 'red',
-            border: '1px solid black',
-          }}
-          position= 'absolute'
-          left= '40%'
-          bottom= '70px'
-          color='blue'
-        >
-          <FaLinkedin
-            style={{
-              fontSize: '40px',
-            }}
-          />
-        </Box>
-        <Box
-          _hover={{
-            color: 'red',
-            border: '1px solid black',
-          }}
-          position= 'absolute'
-          left= '60%'
-          bottom= '70px'
-          color='blue'
-        >
-          <FaWhatsapp
-            style={{
-              fontSize: '40px',
-            }}
-          />
-        </Box>
-        <Box
-          _hover={{
-            color: 'red',
-            border: '1px solid black',
-          }}
-          position= 'absolute'
-          left= '70%'
-          bottom= '80px'
-          color='blue'
-        >
-          <AiOutlineMail
-            style={{
-              fontSize: '40px',
-            }}
-          />
-        </Box>
-        <Box
-          _hover={{
-            color: 'red',
-            border: '1px solid black',
-          }}
-          position= 'absolute'
-          left= '80%'
-          bottom= '100px'
-          color='blue'
-        >
-          <FaGithub
-            style={{
-              fontSize: '40px',
-            }}
-          />
-        </Box>
+        <Image src={heroImg} />
       </Box>
     </Flex>
   );

@@ -1,12 +1,12 @@
-import { Flex, Heading, Text, Image, VStack, Box, Progress } from '@chakra-ui/react';
+import { Flex, Heading, Text, Image, VStack, Box, Progress, useColorModeValue } from '@chakra-ui/react';
 
 import { skills } from '@/db/skills';
 
 const MySkills = () => {
   return (
     <VStack
-      px={{ base: '1%', md: '10%' }}
-      py={{ base: '2%', md: '5%' }}
+      px={{ base: '3%', md: '10%' }}
+      py='5%'
       bg='primary.600'
     >
       <Box w='full'>
@@ -23,18 +23,18 @@ const MySkills = () => {
       </Box>
       <Flex
         w='full'
-        justifyContent='space-between'
+        justifyContent={{ base: 'center', md: 'space-between'}}
         flexWrap='wrap'
         mt='5'
       >
         {
           skills.map((skill) => (
-            <Flex key={skill.id} minW='30%' position='relative' justifyContent='flex-end' mt="6">
+            <Flex key={skill.id} minW={{ base: '80%', md: '30%'}} position='relative' justifyContent='flex-end' mt="6">
               <Box
                 w='64px'
                 h='64px'
                 p='2'
-                bg='primary.600'
+                bg={useColorModeValue('primary.600', 'white')}
                 rounded='2xl'
                 position='absolute'
                 top='15%'
@@ -45,7 +45,7 @@ const MySkills = () => {
               <Flex
                 flexDirection='column'
                 w='90%'
-                bg='white'
+                bg={useColorModeValue('white', 'blackAlpha.400')}
                 pl='50px'
                 pr='2'
                 py='3'

@@ -1,4 +1,4 @@
-import { Card, Stack, Flex, Image, Box, Text, Heading, Link, Spacer, HStack } from '@chakra-ui/react';
+import { Card, Stack, Flex, Image, Box, Text, Heading, Link, Spacer, HStack, useColorModeValue } from '@chakra-ui/react';
 import { Link as NextLink } from 'next/link'
 import { FcBusinessman } from 'react-icons/fc';
 import { ArrowForwardIcon } from '@chakra-ui/icons';
@@ -40,19 +40,19 @@ const About = () => {
           <HStack rounded="xl" border="1px" borderColor="primary.200" p="2">
             <Flex direction="column" p="3" bg="white" rounded="md" alignItems="center" gap="1">
               <Image src="https://cdn-icons-png.flaticon.com/128/10946/10946624.png" w="34px" h="34px" />
-              <Text>Leadership</Text>
+              <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>Leadership</Text>
             </Flex>
             <Flex direction="column" p="3" bg="white" rounded="md" alignItems="center" gap="1">
               <Image src="https://cdn-icons-png.flaticon.com/128/4325/4325626.png" w="34px" h="34px" />
-              <Text>Problem solving</Text>
+              <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>Problem solving</Text>
             </Flex>
             <Flex direction="column" p="3" bg="white" rounded="md" alignItems="center" gap="1">
               <Image src="https://cdn-icons-png.flaticon.com/128/4260/4260116.png" w="34px" h="34px" />
-              <Text>Communication</Text>
+              <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>Communication</Text>
             </Flex>
             <Flex direction="column" p="3" bg="white" rounded="md" alignItems="center" gap="1">
               <Image src="https://cdn-icons-png.flaticon.com/128/1283/1283218.png" w="34px" h="34px" />
-              <Text>Management</Text>
+              <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>Management</Text>
             </Flex>
           </HStack>
         </Flex>

@@ -24,6 +24,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Flex
+      key={project.id}
       direction='column'
       w={{ base: '100%', md: '45%' }}
       gap='4'
