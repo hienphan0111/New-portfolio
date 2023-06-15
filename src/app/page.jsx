@@ -7,6 +7,7 @@ import CareerObjectives from '@/components/CareerObjectives';
 import { Container, VStack, Text, Divider } from '@chakra-ui/react';
 import { Main } from "next/document";
 import MySkills from "@/components/MySkills";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <CareerObjectives />
         <MySkills />
+        <Footer />
       </VStack>
     </main>
   )

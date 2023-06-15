@@ -56,7 +56,7 @@ export const skills = [
     logoUrl: 'https://www.svgrepo.com/show/303232/mongodb-logo.svg'
   },
   {
-    id: 8,
+    id: 9,
     name: 'MongoDB',
     description: '10+ project completed',
     level: 80,
