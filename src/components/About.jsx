@@ -42,8 +42,8 @@ const About = () => {
       initial="hidden"
       animate={controls}
       direction={{ base: 'column', lg: 'row' }}
-      px={{ base: '2%', md: '10%' }}
-      py={{ base: '1%', md: '3%' }}
+      px={{ base: '5%', md: '10%' }}
+      py={{ base: '5%', md: '3%' }}
       bg='#d4f2ef4f'
       gap='5'
     >

@@ -103,7 +103,9 @@ const Navbar = () => {
           />
           <MenuList>
             {links.map((link) => (
-              <MenuItem key={link.id}>{link.title}</MenuItem>
+              <MenuItem key={link.id}>
+                <Link href={link.url}>{link.title}</Link>
+              </MenuItem>
             ))}
           </MenuList>
         </Menu>
