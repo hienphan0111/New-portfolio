@@ -134,7 +134,7 @@ const Hero = () => {
         animate={controls}
         position='relative'
       >
-        <Image src={heroImg} />
+        <Image src={heroImg} alt="profile" />
       </Box>
     </Flex>
   );

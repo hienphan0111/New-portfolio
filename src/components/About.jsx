@@ -56,6 +56,7 @@ const About = () => {
         <Image
           src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
           h='100%'
+          alt="about-des"
         />
         <Text
           fontSize='24px'
@@ -114,6 +115,7 @@ const About = () => {
                 src='https://cdn-icons-png.flaticon.com/128/10946/10946624.png'
                 w='34px'
                 h='34px'
+                alt="leadership-icon"
               />
               <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>
                 Leadership
@@ -131,6 +133,7 @@ const About = () => {
                 src='https://cdn-icons-png.flaticon.com/128/4325/4325626.png'
                 w='34px'
                 h='34px'
+                alt="problem-icon"
               />
               <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>
                 Problem solving
@@ -148,6 +151,7 @@ const About = () => {
                 src='https://cdn-icons-png.flaticon.com/128/4260/4260116.png'
                 w='34px'
                 h='34px'
+                alt="communication-icon"
               />
               <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>
                 Communication
@@ -165,6 +169,7 @@ const About = () => {
                 src='https://cdn-icons-png.flaticon.com/128/1283/1283218.png'
                 w='34px'
                 h='34px'
+                alt="management-icon"
               />
               <Text color={useColorModeValue('blackAlpha.700', 'gray.900')}>
                 Management
