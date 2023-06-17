@@ -63,7 +63,7 @@ const Navbar = () => {
       alignItems='center'
       w='full'
       h='20'
-      px={{ base: '1rem', md: '10rem' }}
+      px={{ base: '1rem', lg: '10rem' }}
     >
       <Heading>Kevin Phan</Heading>
       <HStack

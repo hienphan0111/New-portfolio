@@ -43,7 +43,7 @@ const Hero = () => {
       ref={ref}
       direction={{ base: 'column-reverse', md: 'row' }}
       gap='2'
-      w={{ base: '95%', md: '80%' }}
+      w={{ base: '90%', md: '80%' }}
     >
       <VStack
         as={motion.div}
@@ -70,7 +70,7 @@ const Hero = () => {
             I Am Full-Stack Developer
           </Highlight>
         </Box>
-        <Heading lineHeight='5rem'>
+        <Heading lineHeight='2em' fontSize={{ base: '2xl', lg: '4xl'}}>
           <Highlight
             query={['potential', 'solutions']}
             styles={{

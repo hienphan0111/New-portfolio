@@ -29,7 +29,7 @@ const Footer = () => {
         <Text>A Full stack developer</Text>
         <Box display='flex' padding='5' w='full' alignItems='center'>
           <Divider borderWidth='1px' borderColor={'primary.100'} />
-          <Text px='4' w={{base: '35em', md:'30%'}}>
+          <Text px='4' w={{base: '35em', lg:'30%'}}>
             Reach me through
           </Text>
           <Divider borderWidth='1px' borderColor={'primary.100'} />

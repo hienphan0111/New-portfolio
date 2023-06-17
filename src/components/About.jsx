@@ -41,7 +41,7 @@ const About = () => {
       variants={motions.fadeIn}
       initial="hidden"
       animate={controls}
-      direction={{ base: 'column', md: 'row' }}
+      direction={{ base: 'column', lg: 'row' }}
       px={{ base: '2%', md: '10%' }}
       py={{ base: '1%', md: '3%' }}
       bg='#d4f2ef4f'
