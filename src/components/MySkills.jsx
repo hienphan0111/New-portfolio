@@ -29,6 +29,9 @@ const MySkills = () => {
     }
   }, [controls, inView]);
 
+  const colorValues = useColorModeValue('primary.600', 'white');
+  const colorModes = useColorModeValue('white', 'blackAlpha.400');
+
   return (
     <VStack id="skills" ref={ref} px={{ base: '3%', md: '10%' }} py='5%' bg='primary.600'>
       <Box
@@ -71,7 +74,7 @@ const MySkills = () => {
               w='64px'
               h='64px'
               p='2'
-              bg={useColorModeValue('primary.600', 'white')}
+              bg={colorValues}
               rounded='2xl'
               position='absolute'
               top='15%'
@@ -82,7 +85,7 @@ const MySkills = () => {
             <Flex
               flexDirection='column'
               w='90%'
-              bg={useColorModeValue('white', 'blackAlpha.400')}
+              bg={colorModes}
               pl='50px'
               pr='2'
               py='3'

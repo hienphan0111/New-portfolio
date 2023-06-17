@@ -45,7 +45,7 @@ const ProjectCard = ({ project }) => {
         </Heading>
         <HStack>
           {tech.map((item) => (
-            <Badge colorScheme='green'>{item}</Badge>
+            <Badge key={item} colorScheme='green'>{item}</Badge>
           ))}
         </HStack>
         <Text noOfLines={3}>{description}</Text>
