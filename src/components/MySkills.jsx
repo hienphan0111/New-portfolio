@@ -77,7 +77,7 @@ const MySkills = () => {
               top='15%'
               left='-1%'
             >
-              <Image src={skill.logoUrl} w='full' />
+              <Image src={skill.logoUrl} alt="skill" w='full' />
             </Box>
             <Flex
               flexDirection='column'

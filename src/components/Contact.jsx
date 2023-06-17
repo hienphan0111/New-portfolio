@@ -60,7 +60,7 @@ const Contact = () => {
         actions.resetForm();
       })
       .catch((err) => {
-        setMsg('Oh! Something went wrong, could you try again');
+        setMsg('Something went wrong, could you try again');
         onOpen();
       });
   };
@@ -76,7 +76,7 @@ const Contact = () => {
       >
         <VStack color='white' alignItems='flex-start' gap={5} mb={'5'}>
           <Heading as='h4' fontSize='24px' mb={3}>
-            Let's get in touch
+            Let&#39;s get in touch
           </Heading>
           <Flex gap='3' alignItems='center'>
             <Box
@@ -95,7 +95,7 @@ const Contact = () => {
               <Text fontWeight='bold' fontSize='1xl'>
                 Phone
               </Text>
-              <Text>+84 938 102461</Text>
+              <Text>&#43;84 938 102461</Text>
             </Flex>
           </Flex>
           <Divider />
@@ -116,7 +116,7 @@ const Contact = () => {
               <Text fontWeight='bold' fontSize='1xl'>
                 Address
               </Text>
-              <Text>hienphan@digitalcad.edu.vn</Text>
+              <Text>hienphan&#64;digitalcad.edu.vn</Text>
             </Flex>
           </Flex>
           <Divider />
