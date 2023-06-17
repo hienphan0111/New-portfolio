@@ -38,13 +38,13 @@ const links = [
   },
   {
     id: 4,
-    title: 'My Project',
-    url: '#my_project',
+    title: 'My Projects',
+    url: '#my_projects',
   },
   {
     id: 5,
-    title: 'Career Objective',
-    url: '#career_objective',
+    title: 'Career Objectives',
+    url: '#career_objectives',
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const Navbar = () => {
       alignItems='center'
       w='full'
       h='20'
-      px={{ base: '1rem', md: '10rem' }}
+      px={{ base: '1rem', lg: '10rem' }}
     >
       <Heading>Kevin Phan</Heading>
       <HStack
