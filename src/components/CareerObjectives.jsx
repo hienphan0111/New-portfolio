@@ -33,6 +33,11 @@ const CareerObjectives = () => {
     }
   }, [controls, inView]);
 
+  const colorValues = useColorModeValue(
+    'linear(to-b, primary.600, white)',
+    'linear(to-b, gray.600, gray.200)'
+  )
+
   return (
     <Flex
       id="career_objectives"
@@ -75,10 +80,7 @@ const CareerObjectives = () => {
         {careerObjects.map((obj) => (
           <GridItem key={obj.id}>
             <Card
-              bgGradient={useColorModeValue(
-                'linear(to-b, primary.600, white)',
-                'linear(to-b, gray.600, gray.200)'
-              )}
+              bgGradient={colorValues}
               transition='0.3s'
               p='4'
               _hover={{ bg: 'primary.200', color: 'white' }}
