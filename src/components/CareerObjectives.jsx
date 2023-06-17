@@ -42,7 +42,7 @@ const CareerObjectives = () => {
     <Flex
       id="career_objectives"
       ref={ref}
-      w={{ base: '95%', md: '80%' }}
+      w={{ base: '90%', md: '80%' }}
       py={{ base: '1%', md: '5%' }}
       direction='column'
       justifyContent='center'
