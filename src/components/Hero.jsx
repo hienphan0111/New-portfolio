@@ -17,22 +17,44 @@ import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { IconContext } from 'react-icons';
 import Image from 'next/image';
-import heroImg from '@/assets/Hero.png'
+import heroImg from '@/assets/Hero.png';
 import Socials from './Socials';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
-const styles = {
-  iconHover: {
-    '&:hover': {
-      color: 'red',
-    },
-    border: '1px solid green',
-  },
-};
+import { motions } from '@/utils/motions';
 
 const Hero = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, isInView]);
+
   return (
-    <Flex direction={{ base: 'column-reverse', md: 'row' }} gap='2' w={{base: '95%', md: '80%'}}>
-      <VStack spacing='25px' align='stretch' justifyContent='center' pr='40px'>
+    <Flex
+      id='home'
+      ref={ref}
+      direction={{ base: 'column-reverse', md: 'row' }}
+      gap='2'
+      w={{ base: '95%', md: '80%' }}
+    >
+      <VStack
+        as={motion.div}
+        initial='hidden'
+        variants={motions.fadeInLeft}
+        animate={controls}
+        spacing='25px'
+        align='stretch'
+        justifyContent='center'
+        pr='40px'
+      >
         <Box>
           <Highlight
             query='Full-Stack Developer'
@@ -55,7 +77,7 @@ const Hero = () => {
               color: 'white',
               bg: 'primary.100',
               rounded: 'full',
-              px: '1',
+              px: '2',
               py: '1',
             }}
           >
@@ -76,18 +98,42 @@ const Hero = () => {
             py='2'
             px='4'
             rounded='md'
+            _hover={{
+              backgroundColor: 'primary.200',
+              transform: 'translateY(-3px)',
+              transition: '0.5s',
+            }}
           >
             Get inTouch
             <ArrowForwardIcon />
           </Link>
-          <Button colorScheme='primary.100' variant='outline'>
+          <Link
+            border='1px'
+            px='4'
+            py='2'
+            rounded='md'
+            _hover={{
+              backgroundColor: 'primary.400',
+              transform: 'translateY(-3px)',
+              transition: '0.5s',
+            }}
+            href='https://drive.google.com/file/d/1_KCADusGYNp3PkZeydmDkZkoL_Cuh5_6/view?usp=sharing'
+            colorScheme='primary.100'
+            variant='outline'
+          >
             Download CV
-          </Button>
+          </Link>
         </HStack>
         <Socials />
       </VStack>
       <Spacer />
-      <Box position='relative'>
+      <Box
+        as={motion.div}
+        initial='hidden'
+        variants={motions.fadeInRight}
+        animate={controls}
+        position='relative'
+      >
         <Image src={heroImg} />
       </Box>
     </Flex>

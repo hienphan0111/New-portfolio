@@ -2,17 +2,20 @@ import { HStack, Box, Link } from '@chakra-ui/react';
 import {
   FaFacebook,
   FaLinkedin,
-  FaSquareWhatsapp,
+  FaGithub,
   FaSlack,
   FaWhatsapp,
   FaDiscord,
 } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlineCopyrightCircle } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 const Socials = () => {
   return (
     <HStack gap='4'>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -28,6 +31,25 @@ const Socials = () => {
         </Link>
       </Box>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
+        w='44px'
+        h='44px'
+        rounded='full'
+        border='1px'
+        color='primary.200'
+        borderColor='primary.200'
+        display='flex'
+        justifyContent='center'
+        alignItems='center'
+      >
+        <Link href='https://github.com/hienphan0111'>
+          <FaGithub style={{ fontSize: '34px', padding: '2px' }} />
+        </Link>
+      </Box>
+      <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -43,6 +65,8 @@ const Socials = () => {
         </Link>
       </Box>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -58,6 +82,8 @@ const Socials = () => {
         </Link>
       </Box>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -73,6 +99,8 @@ const Socials = () => {
         </Link>
       </Box>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -88,6 +116,8 @@ const Socials = () => {
         </Link>
       </Box>
       <Box
+        as={motion.div}
+        whileHover={{ scale: 1.2, rotate: 360, color: 'blue' }}
         w='44px'
         h='44px'
         rounded='full'
@@ -103,7 +133,7 @@ const Socials = () => {
         </Link>
       </Box>
     </HStack>
-  )
-}
+  );
+};
 
-export default Socials
+export default Socials;

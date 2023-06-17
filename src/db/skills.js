@@ -56,10 +56,10 @@ export const skills = [
     logoUrl: 'https://www.svgrepo.com/show/303232/mongodb-logo.svg'
   },
   {
-    id: 9,
-    name: 'MongoDB',
+    id: 8,
+    name: 'TailwindCSS',
     description: '10+ project completed',
-    level: 80,
-    logoUrl: 'https://www.svgrepo.com/show/303232/mongodb-logo.svg'
+    level: 90,
+    logoUrl: 'https://www.svgrepo.com/show/354431/tailwindcss-icon.svg'
   }
 ]

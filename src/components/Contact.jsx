@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <Flex w='full' justifyContent='center'>
+    <Flex id="contact" w='full' justifyContent='center'>
       <Flex
         bg='primary.200'
         w={{ base: '95%', md: '90%' }}

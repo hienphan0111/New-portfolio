@@ -17,6 +17,7 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 const Footer = () => {
   return (
     <VStack
+      id= "footer"
       w='full'
       px={{ base: '3%', md: '10%' }}
       pt={{ base: '2%', md: '5%' }}
