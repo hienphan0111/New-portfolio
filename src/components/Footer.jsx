@@ -29,7 +29,7 @@ const Footer = () => {
         <Text>A Full stack developer</Text>
         <Box display='flex' padding='5' w='full' alignItems='center'>
           <Divider borderWidth='1px' borderColor={'primary.100'} />
-          <Text px='4' w={{base: '35em', lg:'30%'}}>
+          <Text px='4' w={{base: '35em', lg:'40%'}}>
             Reach me through
           </Text>
           <Divider borderWidth='1px' borderColor={'primary.100'} />
@@ -38,7 +38,7 @@ const Footer = () => {
       </Flex>
       <Box bg='primary.200' color='white' h='30px' w="full" display="flex" justifyContent="center" alignItems="center" mt="3">
         Copyrigh by <AiOutlineCopyrightCircle />
-        Kevin-Phan. All rights Boxts are reserved
+        Kevin-Phan. All rights are reserved
       </Box>
     </VStack>
   );
