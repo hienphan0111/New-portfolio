@@ -64,13 +64,12 @@ const Navbar = () => {
       alignItems='center'
       w="100vw"
       h='20'
-      px={{ base: '1rem', lg: '10rem' }}
-      pos="fixed"
-      zIndex={2}
+      px={{ base: '1em', lg: '10rem' }}
       bg="primary.200"
       top="0"
       color="primary.400"
-      overflowY="none"
+      pos="fixed"
+      zIndex={2}
     >
       <Heading>Kevin Phan</Heading>
       <HStack

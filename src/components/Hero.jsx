@@ -44,7 +44,7 @@ const Hero = () => {
       direction={{ base: 'column-reverse', md: 'row' }}
       gap='2'
       w={{ base: '90%', md: '80%' }}
-      mt={12}
+      mt={16}
     >
       <VStack
         as={motion.div}

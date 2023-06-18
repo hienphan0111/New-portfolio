@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
   margin: 0;
   padding: 0;
-  overflow-y: none;
+  overflow-x: hidden;
   width: 100vw;
 }
 
