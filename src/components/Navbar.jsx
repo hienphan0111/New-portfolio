@@ -59,67 +59,65 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <>
-      <Flex
-        justifyContent='space-between'
+    <Flex
+      justifyContent='space-between'
+      alignItems='center'
+      w="100vw"
+      h='20'
+      px={{ base: '1rem', lg: '10rem' }}
+      pos="fixed"
+      zIndex={2}
+      bg="primary.200"
+      top="0"
+      color="primary.400"
+      overflowY="none"
+    >
+      <Heading>Kevin Phan</Heading>
+      <HStack
+        spacing='20px'
         alignItems='center'
-        w='full'
-        h='20'
-        px={{ base: '1rem', lg: '10rem' }}
-        pos="fixed"
-        zIndex={2}
-        bg="primary.200"
-        top="0"
-        color="primary.400"
+        h='full'
+        display={{ base: 'none', md: 'flex' }}
       >
-        <Heading>Kevin Phan</Heading>
-        <HStack
-          spacing='20px'
-          alignItems='center'
-          h='full'
-          display={{ base: 'none', md: 'flex' }}
-        >
-          {links.map((link) => (
-            <Link
-              key={link.id}
-              href={link.url}
-              fontWeight='bold'
-              fontSize='18px'
-              _active={{ color: 'blue' }}
-              _hover={{ borderBottom: 'solid 2px #469597', bgClip: 'text', bgGradient: 'linear(to-l, #7928ca, #ff0080)' }}
-              h='full'
-              display='flex'
-              alignItems='center'
-            >
-              {link.title}
-            </Link>
-          ))}
-          <Button onClick={() => toggleColorMode()} variant='outline'>
-            {
-              colorMode === 'dark' ? <SunIcon in={isOpen}/> : <MoonIcon />
-            }
-          </Button>
-        </HStack>
-        <Stack hideFrom='md'>
-          <Menu>
-            <MenuButton
-              as={IconButton}
-              aria-label='Options'
-              icon={<HamburgerIcon />}
-              variant='outline'
-            />
-            <MenuList>
-              {links.map((link) => (
-                <MenuItem key={link.id}>
-                  <Link href={link.url}>{link.title}</Link>
-                </MenuItem>
-              ))}
-            </MenuList>
-          </Menu>
-        </Stack>
-      </Flex>
-        {/* <Divider border-bottom='2px' border-color='#469597' mt="5" /> */}
-    </>
+        {links.map((link) => (
+          <Link
+            key={link.id}
+            href={link.url}
+            fontWeight='bold'
+            fontSize='18px'
+            _active={{ color: 'blue' }}
+            _hover={{ borderBottom: 'solid 2px #469597', bgClip: 'text', bgGradient: 'linear(to-l, #7928ca, #ff0080)' }}
+            h='full'
+            display='flex'
+            alignItems='center'
+          >
+            {link.title}
+          </Link>
+        ))}
+        <Button onClick={() => toggleColorMode()} variant='outline'>
+          {
+            colorMode === 'dark' ? <SunIcon in={isOpen}/> : <MoonIcon />
+          }
+        </Button>
+      </HStack>
+      <Stack hideFrom='md'>
+        <Menu>
+          <MenuButton
+            as={IconButton}
+            aria-label='Options'
+            icon={<HamburgerIcon />}
+            variant='outline'
+          />
+          <MenuList color="black">
+            {links.map((link) => (
+              <MenuItem key={link.id}>
+                <Link href={link.url}>{link.title}</Link>
+              </MenuItem>
+            ))}
+          </MenuList>
+        </Menu>
+      </Stack>
+    </Flex>
   );
 };
 
