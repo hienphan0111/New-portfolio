@@ -42,18 +42,18 @@ const About = () => {
       initial="hidden"
       animate={controls}
       direction={{ base: 'column', lg: 'row' }}
-      px={{ base: '2em', md: '10%' }}
+      px={{ base: '5%', md: '10%' }}
       py={{ base: '2em', md: '3%' }}
       bg='#d4f2ef4f'
       gap='5'
       mt="5"
+      w="100%"
     >
       <Card
         variant='outline'
         rounded='2xl'
         p='5'
         bgGradient='linear(to-b, primary.200, #fff)'
-        mx={{ base: '1em' }}
       >
         <Image
           src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -78,7 +78,6 @@ const About = () => {
           alignItems='flex-start'
           justifyContent='space-between'
           gap='5'
-          mx={{ base: '1em' }}
         >
           <Flex>
             <FcBusinessman style={{ width: '40px' }} />
@@ -105,7 +104,7 @@ const About = () => {
             Contact me
             <ArrowForwardIcon />
           </Link>
-          <HStack w="100%" rounded='xl' border='1px' borderColor='primary.200' p='2'>
+          <HStack rounded='xl' border='1px' borderColor='primary.200' p='2'>
             <Flex
               direction='column'
               p='3'
