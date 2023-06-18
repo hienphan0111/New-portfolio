@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main >
       <Navbar />
-      <Divider border-bottom='2px' border-color='#469597' />
+      {/* <Divider border-bottom='2px' border-color='#469597' mb={20} /> */}
       <VStack mx='auto' my='2'>
         <Hero />
         <About />
