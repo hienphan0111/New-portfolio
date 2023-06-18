@@ -107,7 +107,7 @@ const About = () => {
           <HStack rounded='xl' border='1px' borderColor='primary.200' p='2'>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -125,7 +125,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -143,7 +143,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -161,7 +161,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
