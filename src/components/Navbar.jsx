@@ -62,9 +62,9 @@ const Navbar = () => {
     <Flex
       justifyContent='space-between'
       alignItems='center'
-      w="100vw"
+      w="100%"
       h='20'
-      px={{ base: '1em', lg: '10rem' }}
+      px={{ base: '2em', lg: '10rem' }}
       bg="primary.200"
       top="0"
       color="primary.400"

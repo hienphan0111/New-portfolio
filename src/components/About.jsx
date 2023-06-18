@@ -72,7 +72,7 @@ const About = () => {
           10+ Projects
         </Text>
       </Card>
-      <Flex>
+      <Flex >
         <Flex
           direction='column'
           alignItems='flex-start'
@@ -84,7 +84,7 @@ const About = () => {
             <Text>Kevin Phan</Text>
           </Flex>
           <Heading>A Full Stack Web Developer</Heading>
-          <Text>
+          <Text >
             As a Ful stack Web Developer, I am responsible for designing and
             building complete web application from start to finish. This
             includes creating user interfaces, writing server side code, and

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main >
       <Navbar />
-      <VStack mx='auto' my='2' overflowY="none" w="100vw">
+      <VStack mx='auto' my='2' overflowY="none">
         <Hero />
         <About />
         <CareerObjectives />
