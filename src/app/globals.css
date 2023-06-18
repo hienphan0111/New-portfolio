@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +27,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    margin: 0;
-    padding: 0;
 }

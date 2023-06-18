@@ -42,18 +42,18 @@ const About = () => {
       initial="hidden"
       animate={controls}
       direction={{ base: 'column', lg: 'row' }}
-      px={{ base: '2em', md: '10%' }}
+      px={{ base: '5%', md: '10%' }}
       py={{ base: '2em', md: '3%' }}
       bg='#d4f2ef4f'
       gap='5'
       mt="5"
+      w="100%"
     >
       <Card
         variant='outline'
         rounded='2xl'
         p='5'
         bgGradient='linear(to-b, primary.200, #fff)'
-        mx={{ base: '1em' }}
       >
         <Image
           src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -72,20 +72,19 @@ const About = () => {
           10+ Projects
         </Text>
       </Card>
-      <Flex>
+      <Flex >
         <Flex
           direction='column'
           alignItems='flex-start'
           justifyContent='space-between'
           gap='5'
-          mx={{ base: '1em' }}
         >
           <Flex>
             <FcBusinessman style={{ width: '40px' }} />
             <Text>Kevin Phan</Text>
           </Flex>
           <Heading>A Full Stack Web Developer</Heading>
-          <Text>
+          <Text >
             As a Ful stack Web Developer, I am responsible for designing and
             building complete web application from start to finish. This
             includes creating user interfaces, writing server side code, and
@@ -105,10 +104,10 @@ const About = () => {
             Contact me
             <ArrowForwardIcon />
           </Link>
-          <HStack w="100%" rounded='xl' border='1px' borderColor='primary.200' p='2'>
+          <HStack rounded='xl' border='1px' borderColor='primary.200' p='2'>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -126,7 +125,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -144,7 +143,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
@@ -162,7 +161,7 @@ const About = () => {
             </Flex>
             <Flex
               direction='column'
-              p='3'
+              p={{base: '1', md: '3'}}
               bg='white'
               rounded='md'
               alignItems='center'
